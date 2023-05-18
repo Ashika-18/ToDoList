@@ -24,6 +24,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { (acrion: UIAlertAction) in
             
+            if let textField = alertController.textFields?.first {
+                
+                self.todoList.insert(textField.text!, at: 0)
+                
+                self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: UITableView.RowAnimation.right)
+            }
         }
         
         alertController.addAction(okAction)
