@@ -52,7 +52,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="tableView" destination="eaN-Wx-Yez" id="na5-4e-CIR"/>
+                        <outlet property="tableView" destination="eaN-Wx-Yez" id="L4H-KE-VDd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
